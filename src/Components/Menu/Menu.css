@@ -1,0 +1,91 @@
+.title {
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.single-menu {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 0px 10px;
+    width: 560px;
+    border-radius: 2%;
+    animation: moveShadow-singlemenu 2s;
+}
+
+.single-menu img {
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    padding: 3px;
+    margin: 8px;
+    transition: .5s;
+}
+
+.single-menu img:hover {
+    border-radius: 0;
+}
+
+.menu-content .content-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.content-title .price {
+    padding-right: 10px;
+    font-style: italic;
+    color: orange;
+}
+
+.content-title {
+    /* box-shadow: 0px 3px; */
+    border-bottom: 2px solid #000
+}
+
+.SearchBar {
+    width: 100vw;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.SearchBar .Bar {
+    width: 80%;
+    border:2px solid rgba(0, 0, 0, 0.5);
+    padding: 10px 0px 10px 44px;
+    border-radius: 15px;
+    font-size: 20px;
+    outline: none;
+    transition: 0.5s;
+    background: transparent url('../../assets/search-icon.png') no-repeat 16px center;
+}
+
+.SearchBar .Bar:focus {
+    border: 2px solid rgba(0, 0, 255, 0.5); 
+}
+
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes moveShadow-singlemenu {
+    from {
+        box-shadow: 0px 30px 10px;
+        opacity: 0.9;
+    }
+
+    to {
+        box-shadow: 0px 0px 10px;
+    }
+}

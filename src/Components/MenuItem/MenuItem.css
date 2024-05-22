@@ -1,0 +1,55 @@
+
+.item img {
+    border: 1px solid #ddd;
+    padding: 6px;
+    border-radius: 50%;
+    width: 200px;
+    margin-right: 16px;
+    animation: FadeIn 2s;
+}
+
+.display-inline {
+    display: inline;
+}
+
+.Container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    box-shadow: 0 0px 10px 5px;
+    padding: 10px;
+}
+
+.info {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Labels img {
+    width: 250px;
+}
+
+.Aside .Header h2 {
+    border-bottom: 2px solid black;
+    margin-left: 16px;
+}
+
+@media all and (max-width: 940px) {
+    .Container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .Labels img {
+        margin-top: 10px;
+    }
+
+    .Aside .Header h2 {
+        margin-left: 0px;
+        text-align: center;
+    }
+}
+
+.price {
+    font-style: italic;
+    color: orange;
+}
