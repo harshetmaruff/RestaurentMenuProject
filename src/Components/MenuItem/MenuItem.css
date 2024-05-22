@@ -53,3 +53,24 @@
     font-style: italic;
     color: orange;
 }
+
+.BackButton {
+    font-size: 16px;
+    border-radius: 15px;
+    padding: 8px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 255, 0.5);
+    border: 2px solid rgba(0, 0, 255, 0.1);
+    transition: 0.5s;
+    margin-top: 16px;
+}
+
+.BackButton:hover {
+    background-color: rgba(0, 0, 255, 0.9);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}

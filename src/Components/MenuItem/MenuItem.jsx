@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom"; 
+import { useParams, useNavigate } from "react-router-dom"; 
 import './MenuItem.css'
 
 function MenuItem() {
@@ -9,6 +9,7 @@ function MenuItem() {
     const totalLink = link + menuId + "/item/" + itemId
 
     const [ItemDetail, setItem] = useState();
+    const history = useNavigate();
 
     //To get Item details
     useEffect(() => {
@@ -25,6 +26,7 @@ function MenuItem() {
    
 
     return(
+        <>
         <div className="Container">
             <div className="item">
                 <img src={ItemDetail?.media_url} alt="" />
@@ -62,6 +64,10 @@ function MenuItem() {
                 <img src={ItemDetail?.label_url} alt="" />
             </div> 
         </div>
+        <div className="center">
+        <button onClick={() => history(-1)} className="BackButton">Back</button>
+        </div>
+        </>
     );
 }
 
